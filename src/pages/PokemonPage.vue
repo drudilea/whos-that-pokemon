@@ -42,7 +42,6 @@ export default {
       const rndInt = Math.floor(Math.random() * 4);
 
       this.pokemon = this.pokemonsArr[rndInt];
-      console.log(this.pokemon);
     },
     checkAnswer(selectedId) {
       this.showPokemon = true;
@@ -53,7 +52,6 @@ export default {
       } else {
         this.message = `Oops! Era ${this.pokemon.name}`;
       }
-      console.log(selectedId);
     },
     newGame() {
       this.initVariables();
